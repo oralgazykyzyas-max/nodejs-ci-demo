@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-ci-demo",
+  "version": "1.0.0",
+  "description": "СОӨЖ 38-нұсқа: Node.js жобасы және Jenkins pipeline",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "node scripts/build.js",
+    "test": "node --test",
+    "test:ci": "node --test --test-reporter=spec --test-reporter-destination=stdout --test-reporter=junit --test-reporter-destination=test-results.xml"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}
